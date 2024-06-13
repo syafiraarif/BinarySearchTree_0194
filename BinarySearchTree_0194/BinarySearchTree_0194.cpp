@@ -39,6 +39,20 @@ public:
         Node* currentNode = nullptr;
         search(element, parent, currentNode);
 
+        if(parent == nullptr)
+        {
+            ROOT = newNode;
+            return;
+        }
+        if(element < parent->info)
+        {
+            parent->leftchild = newNode;
+        }
+        else if(element > parent->info)
+        {
+            parent->rightchild = newNode;
+        }
+
     }
 };
 
