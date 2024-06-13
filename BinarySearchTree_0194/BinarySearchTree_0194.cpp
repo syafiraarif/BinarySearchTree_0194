@@ -87,8 +87,7 @@ public:
 
     void preorder(Node* ptr)
     {
-        void preorder(Node * ptr)
-        {
+        
             if (ROOT == nullptr)
             {
                 cout << "Tree is Empty" << endl;
@@ -100,7 +99,6 @@ public:
                 preorder(ptr->leftchild);
                 preorder(ptr->rightchild);
             }
-        }
     }
 
     void postorder(Node* ptr)
@@ -122,10 +120,20 @@ public:
 };
 
 
-
-
 int main()
 {
+    BinaryTree;
+    while(true)
+    {
+        cout << "\n Menu" << endl;
+        cout << "1. imolement insert operation" << endl;
+        cout << "2. perform inorder traversal" << endl;
+        cout << "3. perform preorder traversal" << endl;
+        cout << "4. perform postorder traversal" << endl;
+        cout << "5. exit" << endl; 
+        cout << "\n enter yoour choice (1-5) : ";
+
+    }
     
 }
 
