@@ -122,7 +122,7 @@ public:
 
 int main()
 {
-    BinaryTree;
+    BinaryTree x;
     while(true)
     {
         cout << "\n Menu" << endl;
@@ -133,7 +133,43 @@ int main()
         cout << "5. exit" << endl; 
         cout << "\n enter yoour choice (1-5) : ";
 
+        char ch;
+        cin >> ch;
+        cout << endl;
+
+        switch(ch)
+        {
+        case '1':
+        {
+            cout << "Enter a word: ";
+            string word;
+            cin >> word;
+            x.insert(word);
+            break;
+        }
+        case '2':
+        {
+            x.inorder(x.ROOT);
+            break;
+        }
+        case '3':
+        {
+            x.preorder(x.ROOT);
+            break;
+        }
+        case '4':
+        {
+            x.postorder(x.ROOT);
+            break;
+        }
+        case '5':
+            return;
+        default:
+            {
+            cout << "Invalid option" << endl;
+            break;
+            }
+        }
     }
-    
 }
 
