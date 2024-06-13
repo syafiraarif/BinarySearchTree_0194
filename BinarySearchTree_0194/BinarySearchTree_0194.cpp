@@ -83,6 +83,10 @@ public:
             cout << ptr->info << " ";
             inorder(ptr->rightchild);
         }
+    }
+
+    void preorder(Node* ptr)
+    {
         
     }
 
